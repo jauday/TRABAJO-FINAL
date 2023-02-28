@@ -1,22 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" type="text/css" href="css/estilos_generales.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos_perfil.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Perfil - Usuario</title>
+	<link rel="stylesheet" href="css/estilos_generales.css" />
+	<link rel="stylesheet" href="css/estilos_perfil.css" />
 </head>
+
 <body>
-    
 	<header>
 		<nav>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="perfil.html">Perfil</a></li>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Reportes</a></li>
+				<li><a href="#">Configuración</a></li>
+				<li><a href="#">Cerrar sesión</a></li>
 			</ul>
 		</nav>
 	</header>
+	<div class="container">
+		<aside>
+			<h2>Mis opciones</h2>
+			<ul></ul>
+		</aside>
+		<main>
+			<section class="user-profile">
+				<h1>Mi perfil</h1>
+				<div class="profile-image">
+					<img src="./img/user.png" alt="User Profile Picture">
+					<h2>Nombre del Usuario</h2>
+				</div>
+				<div class="profile-forms">
+					<form>
+						<fieldset>
+							<legend>Datos personales</legend>
+							<div>
+								<label for="name">Nombre:</label>
+								<input type="text" id="name" name="name" value="Juan Pérez" />
+							</div>
+							<div>
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" value="juan.perez@example.com" />
+							</div>
+							<div>
+								<label for="telephone">Teléfono:</label>
+								<input type="tel" id="telephone" name="telephone" value="555-123456" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Contraseña</legend>
+							<div>
+								<label for="actual_password">Contraseña actual:</label>
+								<input type="password" id="actual_password" name="actual_password" />
+							</div>
+							<div>
+								<label for="new_password">Nueva contraseña:</label>
+								<input type="password" id="new_password" name="new_password" />
+							</div>
+							<div>
+								<label for="confirm_password">Confirmar contraseña:</label>
+								<input type="password" id="confirm_password" name="confirm_password" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Preferencias</legend>
+							<div>
+								<label for="languaje">Idioma:</label>
+								<select id="languaje" name="languaje">
+									<option value="es">Español</option>
+									<option value="en">Inglés</option>
+								</select>
+							</div>
+							<div>
+								<label for="theme">Tema:</label>
+								<select id="theme" name="theme">
+									<option value="claro">Claro</option>
+									<option value="oscuro">Oscuro</option>
+								</select>
+							</div>
+						</fieldset>
+						<button type="submit">Guardar cambios</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer>
+		Joaquin y Valentina - Laboratorio de Computacion II - 2023
+	</footer>
 </body>
+
 </html>
