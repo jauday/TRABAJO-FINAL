@@ -1,22 +1,63 @@
-.widget {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #ccc;
-  margin: 10px;
-  flex-basis: calc(33.33% - 20px);
-}
-aside ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-aside li {
-  padding: 35px;
+/* Estilos del dashboard utilizando Flexbox */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-aside a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
+.widget {
+  flex: 1 1 300px; /* Esto permite que los widgets tengan un ancho flexible */
+  margin: 10px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
 }
+ /*
+body nav:hover{
+  background-color: darksalmon;
+} */ 
+
+/* Estilos básicos del menú */
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el mouse */
+nav a:hover {
+  background-color: #555;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .widget {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .widget {
+    flex-basis: 100%;
+  }
+}
+
+
+
