@@ -15,7 +15,7 @@
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="#">Dashboard</a></li>
-				<li><a href="#">Reportes</a></li>
+				<li><a href="#">Ayuda</a></li>
 				<li><a href="#">Configuración</a></li>
 				<li><a href="#">Cerrar sesión</a></li>
 			</ul>
@@ -31,7 +31,7 @@
 				<h1>Mi perfil</h1>
 				<div class="profile-image">
 					<img src="./img/user.png" alt="User Profile Picture">
-					<h2>Nombre del Usuario</h2>
+					<h2> Formulario de perfil de usuario </h2>
 				</div>
 				<div class="profile-forms">
 					<form>
@@ -39,30 +39,30 @@
 							<legend>Datos personales</legend>
 							<div>
 								<label for="name">Nombre:</label>
-								<input type="text" id="name" name="name" value="Juan Pérez" />
+								<input type="text" id="name" name="name" placeholder="Juan Perez" required/>
 							</div>
 							<div>
 								<label for="email">Email:</label>
-								<input type="email" id="email" name="email" value="juan.perez@example.com" />
+								<input type="email" id="email" name="email" placeholder="juan.perez@example.com" required />
 							</div>
 							<div>
 								<label for="telephone">Teléfono:</label>
-								<input type="tel" id="telephone" name="telephone" value="555-123456" />
+								<input type="tel" id="telephone" name="telephone" placeholder="555-123456" required />
 							</div>
 						</fieldset>
 						<fieldset>
 							<legend>Contraseña</legend>
 							<div>
 								<label for="actual_password">Contraseña actual:</label>
-								<input type="password" id="actual_password" name="actual_password" />
+								<input type="password" id="actual_password" name="actual_password" required />
 							</div>
 							<div>
 								<label for="new_password">Nueva contraseña:</label>
-								<input type="password" id="new_password" name="new_password" />
+								<input type="password" id="new_password" name="new_password" required />
 							</div>
 							<div>
 								<label for="confirm_password">Confirmar contraseña:</label>
-								<input type="password" id="confirm_password" name="confirm_password" />
+								<input type="password" id="confirm_password" name="confirm_password" required />
 							</div>
 						</fieldset>
 						<fieldset>
