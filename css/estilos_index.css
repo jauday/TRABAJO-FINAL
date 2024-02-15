@@ -1,16 +1,33 @@
-/* Estilos del dashboard utilizando Flexbox */
 .dashboard {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.widget {
-  flex: 1 1 300px; /* Esto permite que los widgets tengan un ancho flexible */
+.dashboard > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5%;
+}
+h3{
+  font-family: initial;
+}
+h6{
+  font-family: sans-serif;
+}
+
+
+/* .widget {
+  flex: 1 1 300px; 
   margin: 10px;
   padding: 20px;
   background-color: #f1f1f1;
   border: 1px solid #ccc;
-}
+} 
+*/
+
  /*
 body nav:hover{
   background-color: darksalmon;
