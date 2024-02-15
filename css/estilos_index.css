@@ -1,10 +1,10 @@
-.dashboard {
-  display: flex;
+.widgets-izquierda {
   flex-direction: column;
+  display:flex;
 }
 
-.dashboard > div {
-  background-color: #f1f1f1;
+.widgets-izquierda > div {
+  background-color: #ccdbdb;
   width: 200px;
   margin: 10px;
   text-align: center;
@@ -18,6 +18,14 @@ h6{
   font-family: sans-serif;
 }
 
+.widgets-medio-imagenes {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Cambiamos esto a "row" para que las imágenes aparezcan al lado */
+  align-items: center; /* Alineamos las imágenes al centro verticalmente */
+  justify-content: space-around;
+
+}
 
 /* .widget {
   flex: 1 1 300px; 
