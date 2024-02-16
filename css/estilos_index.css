@@ -1,16 +1,44 @@
+.container{
+  display: flex;
+}
 .widgets-izquierda {
   flex-direction: column;
   display:flex;
 }
 
 .widgets-izquierda > div {
-  background-color: #ccdbdb;
+  background-color: #c7acc2;
   width: 200px;
   margin: 10px;
   text-align: center;
   font-size: 25px;
   margin-top: 5%;
 }
+.widgets-medio-imagenes {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Cambiamos esto a "row" para que las imágenes aparezcan al lado */
+  justify-content: space-between;
+
+}
+.center-image {
+  margin: 0 5px; /* Márgenes para separar las imágenes */
+}
+
+.widgets-derecha{
+  background-color: white;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  justify-content: space-between;
+
+}
+.widgets-abajo{
+  display: flex;
+  
+}
+
 h3{
   font-family: initial;
 }
@@ -18,14 +46,6 @@ h6{
   font-family: sans-serif;
 }
 
-.widgets-medio-imagenes {
-  flex: 1;
-  display: flex;
-  flex-direction: row; /* Cambiamos esto a "row" para que las imágenes aparezcan al lado */
-  align-items: center; /* Alineamos las imágenes al centro verticalmente */
-  justify-content: space-around;
-
-}
 
 /* .widget {
   flex: 1 1 300px; 

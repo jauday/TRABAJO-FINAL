@@ -14,7 +14,7 @@ main {
   flex-flow: row nowrap;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+  background: linear-gradient(to bottom right, #eec7c8, #cab0a9);
 }
 header {
   background-color: #222;
