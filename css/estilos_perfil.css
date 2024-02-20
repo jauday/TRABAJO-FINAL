@@ -93,12 +93,6 @@ nav a:hover {
   background-color: #555;
 }
 
-/*
-@media (max-width: 1000px){
-  form {
-      margin-left: 25%;
-  }
-} */
 
 @media (max-width: 700px){
   form {
