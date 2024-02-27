@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  max-width: 1200px; /* Agregamos un ancho máximo para el contenido */
-  margin: 0 auto; /* Centramos el contenido */
+  max-width: 1400px; /* Agregamos un ancho máximo para el contenido */
+  /*margin: 0 auto;  Centramos el contenido */
 }
 
 .widgets-izquierda {
@@ -44,6 +44,14 @@
 
 .widgets-derecha > div {
   margin-bottom: 10px;
+}
+
+.imagentriangulo{
+  width: 30px;
+  height: 30px;
+  background-color: transparent; 
+  float: left;
+
 }
 
 .widgets-abajo {
