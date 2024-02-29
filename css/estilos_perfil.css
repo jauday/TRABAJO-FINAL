@@ -41,7 +41,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color:rgba(0, 0, 0, 0.1)
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*Estilos barra vertical */
@@ -88,20 +88,18 @@ nav a {
   transition: background-color 0.3s;
 }
 
-/* Cambio de color al pasar el mouse */
 nav a:hover {
   background-color: #555;
 }
 
-
-@media (max-width: 700px){
+@media (max-width: 700px) {
   form {
-      margin-left: 15%;
+    margin-left: 15%;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   form {
-      margin-left: 9%;
+    margin-left: 9%;
   }
 }
